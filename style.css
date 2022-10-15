@@ -1172,3 +1172,7 @@ label.mt10.valid {
   background: #3ee792;
   color: #ffffff;
 }
+
+.row{
+  width: 100%;
+}

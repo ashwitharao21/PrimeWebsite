@@ -22,37 +22,6 @@
 });
 </script>
 
-<!-- w3-include-html script -->
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-  </script>
-
   <!--====== USEFULL META ======-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -238,59 +207,51 @@
 
   <section>
     <div class="m-0 p-0 video-space" >
-      <video id="background-video" autoplay loop muted class="w-100">
-        <source src="assest/img/we_are_Hiring!.mp4" height="735px" type="video/mp4">
+      <video class="background-video" autoplay loop muted class="w-100">
+        <source src="assest/img/Maths.mp4" height="735px" type="video/mp4">
       </video>
     </div>
   </section>
   <section class="py-5 bg-career">
     <div class="row px-3 py-5 my-5">
       <div class="col-md-6 col-sm-12 text-center">
-        <img class="page-img" src="assest/img/hiring.png" alt="career">
+        <img class="page-img" src="assest/img/slider/maths.jpg" alt="maths">
       </div>
       <div class="col-md-6 col-sm-12 text-left">
         <div>
-          <h2 class="text-uppercase" style="color:#f6a135;">Qualification:</h2>
-        <ul style="color: #3b6089;">
-            <li>Speak English Fluently.</li>
-            <li>Have Graphic tablet or willing to buy one</li>
-            <li>Passionate about teaching</li>
-            <li>Familiarity with online classes</li>
-            <li>Willing to learn and adapt to US culture</li>
-            <li>Working knowledge of computer</li>
-            <li>Good Internet connection</li>
-            <li>Willing to work part-time between 4 AM - 7 AM IST hours</li>
-            <li>Provide and grade assignments regularly</li>
-            <li>Conduct Monthly Tests</li>
-        </ul>
+          <h2 class="text-uppercase" style="color:#f6a135;">Our Approach:</h2>
+          <ul style="color: #3b6089; list-style: none;">
+            <li>We encourage learning of concepts and lay strong maths foundation. </li>
+            <li>We start with concepts. Explain why we should study the topic, what is the use of topic in daily life  and then move on to how we should solve problems. This makes students excited about topic once they understand its relevance and set the stage to deep dive into subject with excitement and curiosity</li>
+            <li>Lay strong emphasis on practice problems</li>
+          </ul>
         </div>
         <div>
-          <h2 class="text-uppercase" style="color:#f6a135;">Compensation:</h2>
+          <h2 class="text-uppercase" style="color:#f6a135;">Class Highlights:</h2>
         <ul style="color: #3b6089;">
-          <li>Flexibility to choose your hours</li>
-          <li>Will be paid on hourly basis</li>
-          <li>Compettive hourly rates</li>
-          <li>Work from home</li>
+            <li>We offer both group and private classes</li>
+            <li>Group classes could have kids anywhere between 2-4 but not more than four </li>
+            <li>Dedicated teacher for group </li>
+            <li>Introduce the concept </li>
+            <li>Teacher give practice problems in classes and helps solve them</li>
+            <li>Provide examples and variation of problems</li>
+            <li>Provide regular assignment on the topics</li>
+            <li>Topics are graded</li>
+            <li>Conduct Monthly Test</li>
+            <li>Online portal for tracking progress of kid</li>
+            <li>Flow with Kid approach</li>
+            <li>Common core aligned syllabus</li>
+            <li>Blended with aptitude tests </li>
+            <li>Special STAAR practice sessions</li>
         </ul>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="px-5 border-right border-line"></div>
-      <div class="col p-0">
-        <h2 class="px-5 text-uppercase" style="color:#3b6089;">Contact Us</h2>
-        <ul style="list-style: none;">
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-envelope"></span> admin@primekidsacademy.com</a></li>
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-social-whatsapp"></span> +14692610936</a></li>
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-world"></span> primekidsacademy.com</a></li>
-        </ul>
       </div>
     </div>
   </section>
 
 
   <!--FOOTER AREA-->
-  <footer class="footer-area sky-gray-bg relative" style="bottom:0" >
+  <footer class="footer-area sky-gray-bg relative" >
     <div class="footer-top-area">
       <!-- <div class="container">
         <div class="row">
@@ -302,8 +263,8 @@
 
               <div>
                 <ul class="ftco-footer-social alignleft padding10" >
-                                <li class="fadeInUp"><a title="primeaccademy facebook page" target="_blank" href="https://facebook.com/myprimeaccademy"><span class="icofont icofont-social-facebook"></span></a></li>
-                                <li class="fadeInUp"><a title="primeaccademy youtube channel" target="_blank" href="https://www.youtube.com/channel/UCWlaFJLjqWLiJZrIaoU__oA"><span class="icofont icofont-social-youtube"></span></a></li>
+                    <li class="fadeInUp"><a title="primeaccademy facebook page" target="_blank" href="https://facebook.com/myprimeaccademy"><span class="icofont icofont-social-facebook"></span></a></li>
+                    <li class="fadeInUp"><a title="primeaccademy youtube channel" target="_blank" href="https://www.youtube.com/channel/UCWlaFJLjqWLiJZrIaoU__oA"><span class="icofont icofont-social-youtube"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -318,7 +279,6 @@
 	                <li><span class="icofont icofont-envelope"></span><span class="text">contactus@primekidsacademy.com</span></a></li>
 	              </ul>
 	            </div>
-
               </div>
         </div>
       </div>
@@ -375,7 +335,6 @@
 
   <!--===== ACTIVE JS=====-->
   <script src="assest/js/main.js"></script>
-
 
   <!--===== MAPS JS=====
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTS_KEDfHXYBslFTI_qPJIybDP3eceE-A&sensor=false"></script>

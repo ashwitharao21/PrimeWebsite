@@ -22,37 +22,6 @@
 });
 </script>
 
-<!-- w3-include-html script -->
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-  </script>
-
   <!--====== USEFULL META ======-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -237,60 +206,108 @@
   <!--END TOP AREA-->
 
   <section>
-    <div class="m-0 p-0 video-space" >
-      <video id="background-video" autoplay loop muted class="w-100">
-        <source src="assest/img/we_are_Hiring!.mp4" height="735px" type="video/mp4">
+    <div class="m-0 p-0 
+    video-space" >
+      <video class="background-video" autoplay loop muted class="w-100">
+        <source src="assest/img/Arts.mp4" height="735px" type="video/mp4">
       </video>
     </div>
   </section>
   <section class="py-5 bg-career">
     <div class="row px-3 py-5 my-5">
       <div class="col-md-6 col-sm-12 text-center">
-        <img class="page-img" src="assest/img/hiring.png" alt="career">
+        <img class="page-img" src="assest/img/slider/art-work.jpg" alt="arts">
       </div>
       <div class="col-md-6 col-sm-12 text-left">
         <div>
-          <h2 class="text-uppercase" style="color:#f6a135;">Qualification:</h2>
-        <ul style="color: #3b6089;">
-            <li>Speak English Fluently.</li>
-            <li>Have Graphic tablet or willing to buy one</li>
-            <li>Passionate about teaching</li>
-            <li>Familiarity with online classes</li>
-            <li>Willing to learn and adapt to US culture</li>
-            <li>Working knowledge of computer</li>
-            <li>Good Internet connection</li>
-            <li>Willing to work part-time between 4 AM - 7 AM IST hours</li>
-            <li>Provide and grade assignments regularly</li>
-            <li>Conduct Monthly Tests</li>
-        </ul>
+          <h2 class="text-uppercase" style="color:#f6a135;">Our Approach:</h2>
+          <ul style="color: #3b6089; list-style: none;">
+            <li>Arts classes are great stress buster and fun. Kids love to give wings to their imagination and put them on canvas. </li>
+            <li>Our teachers encourage them to express on canvas and harness their talent</li>
+            <li>Provide them guidance and do different kinds of drawing in each sessions</li>
+          </ul>
         </div>
         <div>
-          <h2 class="text-uppercase" style="color:#f6a135;">Compensation:</h2>
+          <h2 class="text-uppercase" style="color:#f6a135;">Class Highlights:</h2>
         <ul style="color: #3b6089;">
-          <li>Flexibility to choose your hours</li>
-          <li>Will be paid on hourly basis</li>
-          <li>Compettive hourly rates</li>
-          <li>Work from home</li>
+            <li>Small batches of 2-3 students</li>
+            <li>One hour long weekly sessions</li>
+            <li>Private coaching available</li>
+            <li>Covers cartoon making, sketching, doodling, oil pasture scenery, vegetable calligraphy</li>
         </ul>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="px-5 border-right border-line"></div>
-      <div class="col p-0">
-        <h2 class="px-5 text-uppercase" style="color:#3b6089;">Contact Us</h2>
-        <ul style="list-style: none;">
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-envelope"></span> admin@primekidsacademy.com</a></li>
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-social-whatsapp"></span> +14692610936</a></li>
-          <li><a style="color:#3b6089;" href=""><span class="icofont icofont-world"></span> primekidsacademy.com</a></li>
-        </ul>
-      </div>
-    </div>
+  </section>
+  <section>
+    <!-- pics scroll -->
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="overlay"></div>
+            <img class="d-block w-100"  src="assest/img/slider/education.jpg" alt="First slide">
+         
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100" src="assest/img/slider/maths.jpg" alt="Second slide">
+           
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100" src="assest/img/slider/chess.jpg" alt="Third slide">
+           
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100" src="assest/img/slider/Python.jpg" alt="Fourth slide">
+           
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100"  src="assest/img/slider/hindi-class.jpg" alt="Fifth slide">
+            
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100"  src="assest/img/slider/art-work.jpg" alt="Sixth slide">
+           
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100"  src="assest/img/slider/maths-features.jpg" alt="Seventh slide">
+            
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block w-100"  src="assest/img/slider/special-offer.jpg" alt="Eighth slide">
+           
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
   </section>
 
 
   <!--FOOTER AREA-->
-  <footer class="footer-area sky-gray-bg relative" style="bottom:0" >
+  <footer class="footer-area sky-gray-bg relative" >
     <div class="footer-top-area">
       <!-- <div class="container">
         <div class="row">
@@ -302,8 +319,8 @@
 
               <div>
                 <ul class="ftco-footer-social alignleft padding10" >
-                                <li class="fadeInUp"><a title="primeaccademy facebook page" target="_blank" href="https://facebook.com/myprimeaccademy"><span class="icofont icofont-social-facebook"></span></a></li>
-                                <li class="fadeInUp"><a title="primeaccademy youtube channel" target="_blank" href="https://www.youtube.com/channel/UCWlaFJLjqWLiJZrIaoU__oA"><span class="icofont icofont-social-youtube"></span></a></li>
+                    <li class="fadeInUp"><a title="primeaccademy facebook page" target="_blank" href="https://facebook.com/myprimeaccademy"><span class="icofont icofont-social-facebook"></span></a></li>
+                    <li class="fadeInUp"><a title="primeaccademy youtube channel" target="_blank" href="https://www.youtube.com/channel/UCWlaFJLjqWLiJZrIaoU__oA"><span class="icofont icofont-social-youtube"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -318,7 +335,6 @@
 	                <li><span class="icofont icofont-envelope"></span><span class="text">contactus@primekidsacademy.com</span></a></li>
 	              </ul>
 	            </div>
-
               </div>
         </div>
       </div>
@@ -375,7 +391,6 @@
 
   <!--===== ACTIVE JS=====-->
   <script src="assest/js/main.js"></script>
-
 
   <!--===== MAPS JS=====
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTS_KEDfHXYBslFTI_qPJIybDP3eceE-A&sensor=false"></script>
