@@ -19,10 +19,11 @@ img.page-img {
 
 .video-space{
     /* height: 100vh; */
+    width: 100%;
 }
 
 .background-video {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     object-fit: cover;
     /* position: fixed; */
@@ -43,6 +44,7 @@ img.page-img {
     /*Tablets [601px -> 1200px]*/
     .video-space{
         /* height: 100vh; */
+        width: 100%;
     }
      .background-video {
         height: 50vh;
@@ -61,6 +63,7 @@ img.page-img {
 	/*Big smartphones [426px -> 600px]*/
     .video-space{
         /* height: 100vh; */
+        width: 100%;
     }
      .background-video {
         height: 40vh;
@@ -79,6 +82,7 @@ img.page-img {
 	/*Small smartphones [325px -> 425px]*/
    .video-space{
     /* height: 100vh; */
+    width: 100%;
    }
      .background-video {
         height: 40vh;
@@ -91,4 +95,5 @@ img.page-img {
         bottom: 0;
         z-index: -1;
       }
+
 }

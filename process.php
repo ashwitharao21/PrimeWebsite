@@ -50,3 +50,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     // return all our data to an AJAX call
     echo json_encode($data);
 }
+?>
