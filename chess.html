@@ -55,7 +55,9 @@
         <![endif]-->
 
 <!-- Facebook Pixel Code -->
-<!-- This site is converting visitors into subscribers and customers with https://respond.io --><script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=a46e5bc7f48353d0a46689a34b4a6f0a4dc06636dc121497cb0befa13976efce"></script><!-- https://respond.io -->
+<!-- This site is converting visitors into subscribers and customers with https://respond.io -->
+<!-- <script id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=a46e5bc7f48353d0a46689a34b4a6f0a4dc06636dc121497cb0befa13976efce"></script> -->
+<!-- https://respond.io -->
 <!-- End Facebook Pixel Code -->
 <meta name="google-site-verification" content="jn6ykBXqd-C27yaKu48QYUElOkNOW390n3lj7QlTvTU" />
 </head>
@@ -77,6 +79,12 @@
 <!-- end facebook messenger -->
   <!--SCROLL TO TOP-->
   <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+   <!-- signup floating icon -->
+   <a href="#" data-toggle="modal" data-target="#myModal" class="float">
+    <!-- <i class="fa fa-plus my-float"></i> -->
+    <i class="fa fa-comment my-float"></i>
+    </a>
 
   <!--START TOP AREA-->
   <header class="top-area" id="home">
@@ -261,6 +269,75 @@
     </div>
   </section>
 
+  <!-- modal -->
+
+  <div class="modal fade modal-lg " id="myModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #e76c6d;color: white;">
+          <h4 class="modal-title"> 
+            <img src="assest/img/favicon.png" style="width:45px;height: 45px;margin-right: 10px; border-radius: 50%;">    
+            Sign up for a free demo session and offers!!.<br>
+            <span class="d-flex social-icons justify-content-between align-items-center px-md-5 mx-md-5">
+              <a target="_blank" href="https://www.messenger.com/t/111375267003665/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0">
+                <img src="assest/img/messenger.svg" class="mt-2" height="25px" width="25px">
+              </a>
+              <a target="_blank" href="https://api.whatsapp.com/send/?phone=14692610936&text&type=phone_number&app_absent=0"><i class="icofont icofont-social-whatsapp"></i></a>
+              <a target="_blank" href="https://t.me/primekidsacademy_bot"><i class="icofont icofont-social-telegram"></i></a>
+              <a target="_blank" href="tel:+14692610936"><i class="icofont icofont-ui-call" style=" font-size: 18px;"></i></a>
+            </span>
+          </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="col-md-8 col-md-offset-2">
+          <!-- <div class="contact-title wow fadeIn">
+                  <h3 class="font28 text-center lg-padding-left70 mb10 xs-mb30 xs-font22 xs-mt20">Sign up for a free demo session and offers!!.</h3>
+          </div> -->
+          <br>
+            <form action="process.php" id="contact-form" class="form-horizontal" role="form" method="post">
+                <div class="form-group" id="name-field">
+                    <label for="form-name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="form-name" name="form-name" required >
+                    </div>
+                </div>
+                <div class="form-group" id="email-field">
+                    <label for="form-email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" id="form-email" name="form-email" required >
+                    </div>
+                </div>
+                <div class="form-group" id="subject-field">
+                    <label for="form-phone" class="col-lg-2 control-label">Phone</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="form-phone" name="form-phone" required >
+                    </div>
+                </div>
+                <div class="form-group" id="message-field">
+                    <label for="form-message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        <textarea class="form-control" rows="6" id="form-message" name="form-message" required ></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        <button type="submit" style="background-color:#e76c6d; color: white;" class="btn btn-default">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <br>
 
   <!--FOOTER AREA-->
   <footer class="footer-area sky-gray-bg relative" >
@@ -301,19 +378,15 @@
           <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="footer-copyright text-center wow fadeIn">
               <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                   document.write(new Date().getFullYear());
                 </script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i><span>Prime Kids Academy</span>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
-              <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <!-- <p>
                 Copyright &copy;<script>
                   document.write(new Date().getFullYear());
                 </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://arohagroup.com" target="_blank">Arohagroup</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
+              </p> -->
             </div>
           </div>
         </div>

@@ -1189,6 +1189,32 @@ label.mt10.valid {
   width: 25px;
 }
 .social-icons a:hover{
-  color: #000;
+  color: #fff;
   font-size: 23px;
+}
+
+/* floating signup icon css */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:68px;
+	right:30px;
+	background-color:#e76c6d;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-float{
+	/* margin-top:22px; */
+  font-size:23px;
+}
+a.float:hover, a.float:active{
+  color: #fff;
+  text-decoration: none;
 }
